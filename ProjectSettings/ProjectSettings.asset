@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 823d25a48c53a5a43a13b23bdf7036ab
+  productGUID: 1bf47cdcce829e14b997e87df1b332d5
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: My project_git
+  productName: "1-B \uC218\uC5C5"
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -681,14 +681,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: My project_git
+  metroPackageName: "1-B \uC218\uC5C5"
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: My project_git
+  metroApplicationDescription: "1-B \uC218\uC5C5"
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -758,10 +758,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 86b2b8eb-a4ac-4cb0-8673-3b433ff892a0
+  cloudProjectId: 29fdd769-5694-4584-abe5-dcb304e78bec
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project_git
+  projectName: "1-B \uC218\uC5C5"
   organizationId: byeongyoon061020
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
