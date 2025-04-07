@@ -21,7 +21,7 @@ public class Game : MonoBehaviour
         {
             Timer = 1;
 
-            GameObject.
+            
         }    
         if (Input.GetMouseButtonDown(0))
         {
