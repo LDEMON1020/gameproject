@@ -217,11 +217,11 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        void UpdateGroundedState()
+       void UpdateGroundedState()
         {
-            if (realGround)
+           if (realGround)
             {
-                coyoteTimeCounter = coyoteTime;
+               coyoteTimeCounter = coyoteTime;
                 isGrounded = true;
             }
             else
@@ -244,7 +244,7 @@ public class PlayerMovement : MonoBehaviour
               //      gliderObject.SetActive(true);
                 }
 
-                rb.velocity = new Vector3(rb.velocity.x, -gliderFallSpeed, rb.velocity.z);
+              //  rb.velocity = new Vector3(rb.velocity.x, -gliderFallSpeed, rb.velocity.z);
             }
 
            // void DisableGlider()
@@ -255,7 +255,7 @@ public class PlayerMovement : MonoBehaviour
                  //   gliderObject.SetActive(false);
                 }
 
-                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+                //rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
             }
 
            // void ApplyGliderMovement(float horizontal, float vertical)
