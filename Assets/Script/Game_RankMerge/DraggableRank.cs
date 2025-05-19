@@ -44,7 +44,7 @@ public class DraggableRank : MonoBehaviour
         spriteRenderer.sortingOrder = 1;
         GridCell targetCell = gamemanager.FindClosestCell(transform.position);
 
-        if(targetCell.currentRank != null)
+        if(targetCell != null)
         {
             if (targetCell.currentRank == null)
             {
