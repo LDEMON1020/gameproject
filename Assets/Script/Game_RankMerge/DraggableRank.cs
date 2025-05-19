@@ -34,7 +34,7 @@ public class DraggableRank : MonoBehaviour
     void StartDragging()
     {
         isDragging = true;
-        dragOffset = transform.position = GetMouseWorldPosition();
+        dragOffset = transform.position - GetMouseWorldPosition();
         spriteRenderer.sortingOrder = 10;
     }
 
@@ -71,6 +71,10 @@ public class DraggableRank : MonoBehaviour
      if(isDragging)
         {
             Vector3 targetPosition = GetMouseWorldPosition() + dragOffset;
+            transform.position = Vector3.Lerp(transform.position, targetPosition, dragSpeed * Time.deltaTime);
+        }
+     else if(transform.position != originalPosition && currentCell != null)
+        {
             transform.position = Vector3.Lerp(transform.position, originalPosition, snapBackSpeed * Time.deltaTime);
         }
     }
@@ -123,7 +127,7 @@ public class DraggableRank : MonoBehaviour
     public Vector3 GetMouseWorldPosition()
     {
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = mainCamera.transform.position.z;
+        mousePos.z = -mainCamera.transform.position.z;
         return mainCamera.ScreenToWorldPoint(mousePos);
     }    
 

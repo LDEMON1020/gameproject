@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     {
         grid = new GridCell[gridWidth, GridHeight];
 
-        for(int x =0; x<gridWidth; x++)
+        for(int x = 0; x<gridWidth; x++)
         {
             for(int y=0; y<GridHeight; y++)
             {
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
                     x * cellSize - (gridWidth * cellSize / 2) + cellSize / 2,
                     y * cellSize - (GridHeight * cellSize / 2) + cellSize / 2,
                     1f
-                    );
+                );
 
                 GameObject cellObj = Instantiate(cellPrefabs, position, Quaternion.identity, gridContainer);
                 GridCell cell = cellObj.AddComponent<GridCell>();
@@ -44,6 +44,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         initializeGrid();  
+        for(int i = 0; i < 4; i++)
+        {
+            SpawnNewRank();
+        }
     }
 
     // Update is called once per frame
@@ -149,14 +153,14 @@ public class GameManager : MonoBehaviour
 
     public void MergeRanks(DraggableRank draggedRank , DraggableRank targetRank)
     {
-        if(draggedRank == null || targetRank.RankLevel != targetRank.RankLevel)
+        if(draggedRank == null || targetRank == null || draggedRank.RankLevel != targetRank.RankLevel)
         {
             if (draggedRank != null) draggedRank.ReturnToOriginalPosition();
             return;
         }
 
         int newLevel = targetRank.RankLevel + 1;
-        if(newLevel>maxRankLevel)
+        if(newLevel > maxRankLevel)
         {
             RemoveRank(draggedRank);
             return;
