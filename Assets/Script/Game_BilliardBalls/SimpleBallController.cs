@@ -51,7 +51,7 @@ public class SimpleBallController : MonoBehaviour
         //턴 매니저가 허용하지 않으면 조작 불가 (추 후 다른 시트 구현시 마저 구현)
         if (!SimpleTurnManager.canPlay) return;
 
-        if (SimpleTurnManager.anyBallMoving) return;
+        if (SimpleTurnManager.anyBallMoving) return;            
 
         //공이 움직이고 있으면 조작 불가
         if (IsMoving()) return;

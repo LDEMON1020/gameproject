@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2de2361f128eb04d95d9c416aa345c9, type: 3}
+  m_Name: OrangeCharacter
+  m_EditorClassIdentifier: 
+  characterName: "\uBA54\uC778 \uCE90\uB9AD\uD130"
+  characterImage: {fileID: 21300000, guid: c03f2bdb26799f84898e1daa1b9fe634, type: 3}
+  dialogueLines:
+  - 12321
+  - 232322323
+  - 4434343
+  - 1223455
